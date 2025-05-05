@@ -35,7 +35,7 @@ case "darwin": {
   break;
 }
 case "windows": {
-  const roamingDir = Deno.env.get("FOLDERID_RoamingAppData");
+  const roamingDir = Deno.env.get("AppData");
   if (roamingDir) {
     storagePath = path.join(roamingDir, storageFile);
   }
